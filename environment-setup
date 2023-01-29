@@ -1,6 +1,6 @@
-#Please launch cmd in administrative mode [ex: opens to C:\Windows\System32>  ]
+####Please launch cmd in administrative mode [ex: opens to C:\Windows\System32>  ]
 #execute the below commands one by one
-#use --force and --debug along with commands for retry and to get more details/resolve the error.
+#if needed, use --force and --debug along with commands for retry and to get more details/resolve the error.
 
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 choco install -y wget nano notepad2
@@ -10,9 +10,11 @@ choco install -y vagrant
 choco install -y vscode
 choco install -y git --params "/GitAndUnixToolsOnPath /WindowsTerminal"
 refreshenv
-bash
-cd ~
-pwd
 
 #please ensure bash is available, else disable Windows Subsystem for linux from windows features and reboot to enable bash
+#then type the below to check
+bash
+cd ~
+pwd 
+
 
