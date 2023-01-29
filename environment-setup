@@ -13,5 +13,5 @@ bash
 cd ~
 pwd
 
-#please ensure bash is available, else enable disable windows subsystem and reboot
+#please ensure bash is available, else enable disable Windows Subsystem for linux from windows features and reboot
 
