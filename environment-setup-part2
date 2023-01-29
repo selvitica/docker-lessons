@@ -1,5 +1,6 @@
-#lauch cmd in administrative mode 
-#cd ~
+#lauch cmd in administrative mode and switch to bash and execute the below in steps.
+
+cd ~
 mkdir devops
 cd devops
 mkdir provision release coding
