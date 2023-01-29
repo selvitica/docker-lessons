@@ -9,3 +9,9 @@ choco install -y vagrant
 choco install -y vscode
 choco install -y git --params "/GitAndUnixToolsOnPath /WindowsTerminal"
 refreshenv
+bash
+cd ~
+pwd
+
+#please ensure bash is available, else enable disable windows subsystem and reboot
+
