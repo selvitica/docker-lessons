@@ -1,6 +1,6 @@
 #Please launch cmd in administrative mode [ex: opens to C:\Windows\System32>  ]
 #execute the below commands one by one
-#use --force and --debug along with cmds for retry and to get more details/resolve the error.
+#use --force and --debug along with commands for retry and to get more details/resolve the error.
 
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 choco install -y wget nano notepad2
