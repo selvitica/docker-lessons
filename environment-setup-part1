@@ -6,6 +6,8 @@
 choco install -y wget nano notepad2
 choco install -y consolez cmder conemu 
 choco install -y virtualbox
+##publisher of virtual box should only Oracle
+
 choco install -y vagrant
 choco install -y vscode
 choco install -y git --params "/GitAndUnixToolsOnPath /WindowsTerminal"
