@@ -1,0 +1,5 @@
+choco uninstall virtualbox -y
+choco install virtualbox --version=7.0.4 -y
+##publisher is not entirely Oracle. 
+Getting kernel panic not syncing. 
+Increased memory,processor.
