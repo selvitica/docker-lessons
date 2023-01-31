@@ -56,6 +56,7 @@ C:\ProgramData\chocolatey\lib\terraform\tools
 Chocolatey installed 1/1 packages.
  See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
 
+
 C:\Windows\System32>terraform --v
 Usage: terraform [global options] <subcommand> [args]
 
@@ -95,6 +96,7 @@ Global options (use these before the subcommand, if any):
                 given subcommand.
   -help         Show this help output, or the help for a specified subcommand.
   -version      An alias for the "version" subcommand.
+
 
 C:\Windows\System32>terraform --version
 Terraform v1.3.7
@@ -186,6 +188,7 @@ Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
 
 Last login: Tue Jan 31 17:40:10 2023
 vagrant@vagrant:~$ sudo su -
+
 root@vagrant:~# cat /etc/*-release
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=18.04
@@ -203,14 +206,18 @@ BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 VERSION_CODENAME=bionic
 UBUNTU_CODENAME=bionic
+
 root@vagrant:~# curl -fsSL https://test.docker.com -o test-docker.sh
+
 root@vagrant:~# systemctl is-active docker
 inactive
+
 root@vagrant:~# apt install bridge-tools
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
 E: Unable to locate package bridge-tools
+
 root@vagrant:~# apt install bridge-utils
 Reading package lists... Done
 Building dependency tree
@@ -249,8 +256,12 @@ commands:
         showmacs        <bridge>                show a list of mac addrs
         showstp         <bridge>                show bridge stp info
         stp             <bridge> {on|off}       turn stp on/off
+        
+        
 root@vagrant:~# brctl show
 bridge name     bridge id               STP enabled     interfaces
+
+
 root@vagrant:~# df -hT
 Filesystem                   Type      Size  Used Avail Use% Mounted on
 udev                         devtmpfs  2.6G     0  2.6G   0% /dev
@@ -261,8 +272,12 @@ tmpfs                        tmpfs     5.0M     0  5.0M   0% /run/lock
 tmpfs                        tmpfs     2.6G     0  2.6G   0% /sys/fs/cgroup
 vagrant                      vboxsf    476G  170G  307G  36% /vagrant
 tmpfs                        tmpfs     526M     0  526M   0% /run/user/1000
+
+
 root@vagrant:~# ls /var/lib/docker
 ls: cannot access '/var/lib/docker': No such file or directory
+
+
 root@vagrant:~# sh test-docker.sh
 # Executing docker install script, commit: 1d97565eca92bb523082b7d4f530c74104e05d35
 + sh -c apt-get update -qq >/dev/null
@@ -325,6 +340,7 @@ WARNING: Access to the remote API on a privileged Docker daemon is equivalent
 
 ================================================================================
 
+
 root@vagrant:~# apt update
 Hit:1 https://download.docker.com/linux/ubuntu bionic InRelease
 Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
@@ -335,6 +351,8 @@ Reading package lists... Done
 Building dependency tree
 Reading state information... Done
 270 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+
 root@vagrant:~# cat /etc/apt/sources.list
 #
 
@@ -391,14 +409,19 @@ deb http://security.ubuntu.com/ubuntu bionic-security universe
 # deb-src http://security.ubuntu.com/ubuntu bionic-security universe
 deb http://security.ubuntu.com/ubuntu bionic-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+
 root@vagrant:~# apt-get update -qq
+
 root@vagrant:~# apt-get update
+
 Hit:1 https://download.docker.com/linux/ubuntu bionic InRelease
 Hit:2 http://security.ubuntu.com/ubuntu bionic-security InRelease
 Hit:3 http://archive.ubuntu.com/ubuntu bionic InRelease
 Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
 Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
 Reading package lists... Done
+
+
 root@vagrant:~# apt update
 Hit:1 https://download.docker.com/linux/ubuntu bionic InRelease
 Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
@@ -409,6 +432,8 @@ Reading package lists... Done
 Building dependency tree
 Reading state information... Done
 270 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+
 root@vagrant:~# ls /dev
 autofs           ecryptfs   log           memory_bandwidth    rtc       tty1   tty21  tty33  tty45  tty57      ttyS1   ttyS21  ttyS5       vcs1   vfio
 block            fb0        loop0         mqueue              rtc0      tty10  tty22  tty34  tty46  tty58      ttyS10  ttyS22  ttyS6       vcs2   vga_arbiter
@@ -423,6 +448,8 @@ disk             initctl    loop-control  ptmx                stdin     tty18  t
 dm-0             input      mapper        pts                 stdout    tty19  tty30  tty42  tty54  tty9       ttyS19  ttyS30  vboxguest   vcsa4
 dm-1             kmsg       mcelog        random              tty       tty2   tty31  tty43  tty55  ttyprintk  ttyS2   ttyS31  vboxuser    vcsa5
 dri              lightnvm   mem           rfkill              tty0      tty20  tty32  tty44  tty56  ttyS0      ttyS20  ttyS4   vcs         vcsa6
+
+
 root@vagrant:~# stat /dev/null
   File: /dev/null
   Size: 0               Blocks: 0          IO Block: 4096   character special file
@@ -432,6 +459,7 @@ Access: 2023-01-31 17:39:46.064000000 +0000
 Modify: 2023-01-31 17:39:46.064000000 +0000
 Change: 2023-01-31 17:39:46.064000000 +0000
  Birth: -
+ 
 root@vagrant:~# history
     1  cat /etc/*-release
     2  curl -fsSL https://test.docker.com -o test-docker.sh
@@ -451,6 +479,8 @@ root@vagrant:~# history
    16  ls /dev
    17  stat /dev/null
    18  history
+   
+   
 root@vagrant:~# systemctl is-active docker
 active
 root@vagrant:~# systemctl status docker
@@ -473,6 +503,8 @@ Jan 31 18:15:16 vagrant dockerd[21250]: time="2023-01-31T18:15:16.240269190Z" le
 Jan 31 18:15:16 vagrant dockerd[21250]: time="2023-01-31T18:15:16.299776605Z" level=info msg="[core] [Server #7] Server created" module=grpc
 Jan 31 18:15:16 vagrant systemd[1]: Started Docker Application Container Engine.
 Jan 31 18:15:16 vagrant dockerd[21250]: time="2023-01-31T18:15:16.310489009Z" level=info msg="API listen on /run/docker.sock"
+
+
 root@vagrant:~# systemctl status docker.service
 ● docker.service - Docker Application Container Engine
    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
@@ -495,8 +527,12 @@ Jan 31 18:15:16 vagrant systemd[1]: Started Docker Application Container Engine.
 Jan 31 18:15:16 vagrant dockerd[21250]: time="2023-01-31T18:15:16.310489009Z" level=info msg="API listen on /run/docker.sock"
 root@vagrant:~#
 root@vagrant:~#
+
+
 root@vagrant:~# journelctl -xu docker
 -su: journelctl: command not found
+
+
 root@vagrant:~# journalctl -xu docker
 -- Logs begin at Mon 2023-01-30 19:00:57 UTC, end at Tue 2023-01-31 19:17:01 UTC. --
 Jan 31 18:15:14 vagrant systemd[1]: Starting Docker Application Container Engine...
@@ -547,6 +583,8 @@ Jan 31 18:15:16 vagrant systemd[1]: Started Docker Application Container Engine.
 --
 -- The start-up result is RESULT.
 Jan 31 18:15:16 vagrant dockerd[21250]: time="2023-01-31T18:15:16.310489009Z" level=info msg="API listen on /run/docker.sock"
+
+
 root@vagrant:~# tail -n 50 /var/log/syslog
 Jan 31 18:15:14 vagrant dockerd[21250]: time="2023-01-31T18:15:14.231358746Z" level=info msg="[core] [Channel #1] original dial target is: \"unix:///run/containerd/containerd.sock\"" module=grpc
 Jan 31 18:15:14 vagrant dockerd[21250]: time="2023-01-31T18:15:14.231823916Z" level=info msg="[core] [Channel #1] parsed dial target is: {Scheme:unix Authority: Endpoint:run/containerd/containerd.sock URL:{Scheme:unix Opaque: User: Host: Path:/run/containerd/containerd.sock RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}" module=grpc
@@ -600,10 +638,12 @@ Jan 31 18:31:15 vagrant systemd-resolved[533]: Server returned error NXDOMAIN, m
 Jan 31 19:17:01 vagrant CRON[23236]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
 root@vagrant:~#
 root@vagrant:~#
+
 root@vagrant:~# systemctl deamon-reload
 Unknown operation deamon-reload.
 root@vagrant:~# systemctl reload-deamon
 Unknown operation reload-deamon.
+
 root@vagrant:~#
 root@vagrant:~#
 root@vagrant:~# systemctl daemon-reload
@@ -647,11 +687,16 @@ root@vagrant:~# history
    29  history
 root@vagrant:~#
 root@vagrant:~#
+
 root@vagrant:~# brctl show
 bridge name     bridge id               STP enabled     interfaces
 docker0         8000.02423fa69f26       no
+
+
 root@vagrant:~#
 root@vagrant:~#
+
+
 root@vagrant:~# ifconfig docker0
 docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
@@ -697,10 +742,14 @@ root@vagrant:~#
 root@vagrant:~# man bridge
 root@vagrant:~#
 root@vagrant:~#
+
 root@vagrant:~# ls /var/lib/docker
 buildkit  containers  engine-id  image  network  overlay2  plugins  runtimes  swarm  tmp  volumes
+
 root@vagrant:~#
 root@vagrant:~#
+
+
 root@vagrant:~# docker system info
 Client:
  Context:    default
@@ -766,6 +815,8 @@ Server:
 WARNING: No swap limit support
 root@vagrant:~#
 root@vagrant:~#
+
+
 root@vagrant:~# docker pull ubuntu
 Using default tag: latest
 latest: Pulling from library/ubuntu
@@ -773,6 +824,8 @@ latest: Pulling from library/ubuntu
 Digest: sha256:f05532b6a1dec5f7a77a8d684af87bc9cd1f2b32eab301c109f8ad151b5565d1
 Status: Downloaded newer image for ubuntu:latest
 docker.io/library/ubuntu:latest
+
+
 root@vagrant:~#
 root@vagrant:~#
 root@vagrant:~# docker image inspect ubuntu
@@ -869,6 +922,8 @@ root@vagrant:~# docker image inspect ubuntu
         }
     }
 ]
+
+
 root@vagrant:~# exit
 logout
 vagrant@vagrant:~$ exit
