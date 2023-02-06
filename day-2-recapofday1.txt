@@ -1,0 +1,343 @@
+Microsoft Windows [Version 10.0.22621.1105]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>bash
+
+ashwi@HYPERLAPSE  /c/Windows/System32
+$ cd ~
+
+ashwi@HYPERLAPSE  ~
+$ pwd
+/c/Users/ashwi
+
+ashwi@HYPERLAPSE  ~
+$ ls
+ AppData             Favorites               NTUSER.DAT                                                                                     PrintHood      Templates         ntuser.ini
+'Application Data'   IntelGraphicsProfiles   NTUSER.DAT{7dfb9b14-9ddd-11ed-b745-ab9a50e47ba7}.TM.blf                                        Recent         Videos            source
+ Contacts            Links                   NTUSER.DAT{7dfb9b14-9ddd-11ed-b745-ab9a50e47ba7}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'  'VirtualBox VMs'
+ Cookies            'Local Settings'         NTUSER.DAT{7dfb9b14-9ddd-11ed-b745-ab9a50e47ba7}.TMContainer00000000000000000002.regtrans-ms   Searches       devops
+ Documents           Music                   NetHood                                                                                        SendTo         ntuser.dat.LOG1
+ Downloads          'My Documents'           OneDrive                                                                                      'Start Menu'    ntuser.dat.LOG2
+
+ashwi@HYPERLAPSE  ~
+$ ls -l
+total 8201
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:09  AppData
+lrwxrwxrwx 1 ashwi 197609      30 Jan 26 17:09 'Application Data' -> /c/Users/ashwi/AppData/Roaming
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:12  Contacts
+lrwxrwxrwx 1 ashwi 197609      58 Jan 26 17:09  Cookies -> /c/Users/ashwi/AppData/Local/Microsoft/Windows/INetCookies
+drwxr-xr-x 1 ashwi 197609       0 Jan 27 23:11  Documents
+drwxr-xr-x 1 ashwi 197609       0 Jan 31 00:17  Downloads
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:12  Favorites
+drwxr-xr-x 1 ashwi 197609       0 Feb  6 20:48  IntelGraphicsProfiles
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:12  Links
+lrwxrwxrwx 1 ashwi 197609      28 Jan 26 17:09 'Local Settings' -> /c/Users/ashwi/AppData/Local
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:12  Music
+lrwxrwxrwx 1 ashwi 197609      24 Jan 26 17:09 'My Documents' -> /c/Users/ashwi/Documents
+-rw-r--r-- 1 ashwi 197609 5242880 Feb  5 22:05  NTUSER.DAT
+-rw-r--r-- 1 ashwi 197609   65536 Jan 26 17:09  NTUSER.DAT{7dfb9b14-9ddd-11ed-b745-ab9a50e47ba7}.TM.blf
+-rw-r--r-- 1 ashwi 197609  524288 Jan 26 17:09  NTUSER.DAT{7dfb9b14-9ddd-11ed-b745-ab9a50e47ba7}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 ashwi 197609  524288 Jan 26 17:09  NTUSER.DAT{7dfb9b14-9ddd-11ed-b745-ab9a50e47ba7}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 ashwi 197609      66 Jan 26 17:09  NetHood -> '/c/Users/ashwi/AppData/Roaming/Microsoft/Windows/Network Shortcuts'
+drwxr-xr-x 1 ashwi 197609       0 Jan 29 20:44  OneDrive
+lrwxrwxrwx 1 ashwi 197609      66 Jan 26 17:09  PrintHood -> '/c/Users/ashwi/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'
+lrwxrwxrwx 1 ashwi 197609      55 Jan 26 17:09  Recent -> /c/Users/ashwi/AppData/Roaming/Microsoft/Windows/Recent
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:12 'Saved Games'
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 17:29  Searches
+lrwxrwxrwx 1 ashwi 197609      55 Jan 26 17:09  SendTo -> /c/Users/ashwi/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 ashwi 197609      59 Jan 26 17:09 'Start Menu' -> '/c/Users/ashwi/AppData/Roaming/Microsoft/Windows/Start Menu'
+lrwxrwxrwx 1 ashwi 197609      58 Jan 26 17:09  Templates -> /c/Users/ashwi/AppData/Roaming/Microsoft/Windows/Templates
+drwxr-xr-x 1 ashwi 197609       0 Feb  6 20:48  Videos
+drwxr-xr-x 1 ashwi 197609       0 Jan 31 00:06 'VirtualBox VMs'
+drwxr-xr-x 1 ashwi 197609       0 Jan 29 20:47  devops
+-rw-r--r-- 1 ashwi 197609 1753088 Jan 26 17:09  ntuser.dat.LOG1
+-rw-r--r-- 1 ashwi 197609  262144 Jan 26 17:09  ntuser.dat.LOG2
+-rw-r--r-- 1 ashwi 197609      20 Jan 26 17:09  ntuser.ini
+drwxr-xr-x 1 ashwi 197609       0 Jan 26 19:16  source
+
+ashwi@HYPERLAPSE  ~
+$ cd devops/
+
+ashwi@HYPERLAPSE  ~/devops
+$ ls
+coding  provision  release
+
+ashwi@HYPERLAPSE  ~/devops
+$ cd provision/
+
+ashwi@HYPERLAPSE  ~/devops/provision
+$ ls
+docker  kubernetes  vagrant
+
+ashwi@HYPERLAPSE  ~/devops/provision
+$ cd vagrant/
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant
+$ ls
+bionic  centos
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant
+$ cd bionic/
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ ls
+Vagrantfile
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ code Vagrantfile
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant status
+Current machine states:
+
+default                   poweroff (virtualbox)
+
+The VM is powered off. To restart the VM, simply run `vagrant up`
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant global-status
+id       name    provider   state    directory
+------------------------------------------------------------------------------------
+6b94b3c  default virtualbox poweroff C:/Users/ashwi/devops/provision/vagrant/ubuntu
+c64d270  default virtualbox poweroff C:/Users/ashwi/devops/provision/vagrant/centos
+d54f8a8  default virtualbox poweroff C:/Users/ashwi/devops/provision/vagrant/bionic
+
+The above shows information about all known Vagrant environments
+on this machine. This data is cached and may not be completely
+up-to-date (use "vagrant global-status --prune" to prune invalid
+entries). To interact with any of the machines, you can go to that
+directory and run Vagrant, or you can use the ID directly with
+Vagrant commands from any directory. For example:
+"vagrant destroy 1a2b3c4d"
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ hostname
+HYPERLAPSE
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant destroy
+    default: Are you sure you want to destroy the 'default' VM? [y/N] y
+==> default: Destroying VM and associated drives...
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant box list
+centos/7           (virtualbox, 2004.01)
+hashicorp/bionic64 (virtualbox, 1.0.282)
+ubuntu/xenial64    (virtualbox, 20211001.0.0)
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant box add generic/ubuntu1804
+==> box: Loading metadata for box 'generic/ubuntu1804'
+    box: URL: https://vagrantcloud.com/generic/ubuntu1804
+This box can work with multiple providers! The providers that it
+can work with are listed below. Please review the list and choose
+the provider you will be working with.
+
+1) hyperv
+2) libvirt
+3) parallels
+4) virtualbox
+5) vmware_desktop
+
+Enter your choice: 4
+==> box: Adding box 'generic/ubuntu1804' (v4.2.10) for provider: virtualbox
+    box: Downloading: https://vagrantcloud.com/generic/boxes/ubuntu1804/versions/4.2.10/providers/virtualbox.box
+    box:
+    box: Calculating and comparing box checksum...
+==> box: Successfully added box 'generic/ubuntu1804' (v4.2.10) for 'virtualbox'!
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'hashicorp/bionic64'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'hashicorp/bionic64' version '1.0.282' is up to date...
+==> default: Setting the name of the VM: bionic_default_1675706966683_27927
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+Timed out while waiting for the machine to boot. This means that
+Vagrant was unable to communicate with the guest machine within
+the configured ("config.vm.boot_timeout" value) time period.
+
+If you look above, you should be able to see the error(s) that
+Vagrant had when attempting to connect to the machine. These errors
+are usually good hints as to what may be wrong.
+
+If you're using a custom box, make sure that networking is properly
+working and you're able to connect to the machine. It is a common
+problem that networking isn't setup properly in these boxes.
+Verify that authentication configurations are also setup properly,
+as well.
+
+If the box appears to be booting properly, you may want to increase
+the timeout ("config.vm.boot_timeout") value.
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant status
+Current machine states:
+
+default                   running (virtualbox)
+
+The VM is running. To stop this VM, you can run `vagrant halt` to
+shut it down forcefully, or you can run `vagrant suspend` to simply
+suspend the virtual machine. In either case, to restart it again,
+simply run `vagrant up`.
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant ssh
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant reload
+==> default: Attempting graceful shutdown of VM...
+    default: Guest communication could not be established! This is usually because
+    default: SSH is not running, the authentication information was changed,
+    default: or some other networking issue. Vagrant will force halt, if
+    default: capable.
+==> default: Forcing shutdown of VM...
+==> default: Checking if box 'hashicorp/bionic64' version '1.0.282' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+==> default: Waiting for cleanup before exiting...
+
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ Vagrant exited after cleanup due to external interrupt.
+
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ ls
+Vagrantfile
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'hashicorp/bionic64' version '1.0.282' is up to date...
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant reload
+==> default: Attempting graceful shutdown of VM...
+    default: Guest communication could not be established! This is usually because
+    default: SSH is not running, the authentication information was changed,
+    default: or some other networking issue. Vagrant will force halt, if
+    default: capable.
+==> default: Forcing shutdown of VM...
+==> default: Checking if box 'hashicorp/bionic64' version '1.0.282' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+
+==> default: Waiting for cleanup before exiting...
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ Vagrant exited after cleanup due to external interrupt.
+
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant destory
+Usage: vagrant [options] <command> [<args>]
+
+    -h, --help                       Print this help.
+
+Common commands:
+     autocomplete    manages autocomplete installation on host
+     box             manages boxes: installation, removal, etc.
+     cloud           manages everything related to Vagrant Cloud
+     destroy         stops and deletes all traces of the vagrant machine
+     global-status   outputs status Vagrant environments for this user
+     halt            stops the vagrant machine
+     help            shows the help for a subcommand
+     init            initializes a new Vagrant environment by creating a Vagrantfile
+     login
+     package         packages a running vagrant environment into a box
+     plugin          manages plugins: install, uninstall, update, etc.
+     port            displays information about guest port mappings
+     powershell      connects to machine via powershell remoting
+     provision       provisions the vagrant machine
+     push            deploys code in this environment to a configured destination
+     rdp             connects to machine via RDP
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
+     resume          resume a suspended vagrant machine
+     serve           start Vagrant server
+     snapshot        manages snapshots: saving, restoring, etc.
+     ssh             connects to machine via SSH
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
+     status          outputs status of the vagrant machine
+     suspend         suspends the machine
+     up              starts and provisions the vagrant environment
+     upload          upload to machine via communicator
+     validate        validates the Vagrantfile
+     version         prints current and latest Vagrant version
+     winrm           executes commands on a machine via WinRM
+     winrm-config    outputs WinRM configuration to connect to the machine
+
+For help on any individual command run `vagrant COMMAND -h`
+
+Additional subcommands are available, but are either more advanced
+or not commonly used. To see all subcommands, run the command
+`vagrant list-commands`.
+        --[no-]color                 Enable or disable color output
+        --machine-readable           Enable machine readable output
+    -v, --version                    Display Vagrant version
+        --debug                      Enable debug output
+        --timestamp                  Enable timestamps on log output
+        --debug-timestamp            Enable debug output with timestamps
+        --no-tty                     Enable non-interactive output
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant status
+Current machine states:
+
+default                   running (virtualbox)
+
+The VM is running. To stop this VM, you can run `vagrant halt` to
+shut it down forcefully, or you can run `vagrant suspend` to simply
+suspend the virtual machine. In either case, to restart it again,
+simply run `vagrant up`.
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$ vagrant halt
+==> default: Attempting graceful shutdown of VM...
+    default: Guest communication could not be established! This is usually because
+    default: SSH is not running, the authentication information was changed,
+    default: or some other networking issue. Vagrant will force halt, if
+    default: capable.
+==> default: Forcing shutdown of VM...
+
+ashwi@HYPERLAPSE  ~/devops/provision/vagrant/bionic
+$
